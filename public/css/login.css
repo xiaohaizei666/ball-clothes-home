@@ -1,0 +1,135 @@
+/*清除样式*/
+div,h3,input,p,span,a{
+  padding:0;
+  margin:0;
+  border:none;
+}
+a,a:hover{
+  text-decoration:none;
+}
+/*页面头部欢迎登录*/
+#header_top span{
+  font-size:30px;
+  color:#4f4d4e;
+  position:relative;
+  top:30px;
+  left:30px;
+}
+
+/*登录页面*/
+/*登录背景图片*/
+#container{
+  width:100%;
+  box-sizing: border-box;
+  margin:0 auto;
+  height:800px;
+  overflow-x: hidden;
+  background:url(../img/login_bg.jpg)no-repeat center 0;
+  background-size:100%;
+}
+/*登录框背景*/
+#login{
+	width:300px;
+	height:300px;
+	margin-right:150px;
+  margin-top:150px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.3);
+}
+/*设置右浮动*/
+.rt{
+  float:right;
+}
+/*登录框内容*/
+#login .txt{
+  float:left;
+  overflow:hidden;
+  width:260px;
+  height:270px;
+  padding:10px;
+}
+/*用户登录*/
+#login .txt p{
+  font-size:18px;
+  color:#fff;
+  height:40px;
+  line-height:40px;
+}
+/*新用户注册*/
+#login .txt p span a{
+  float:right;
+  color:#fff;
+}
+/*用户名和密码输入框*/
+#login .txt .text input{
+  border:1px solid #ddd;
+  padding:10px;
+  width:260px;
+  margin-top:14px;
+}
+/*自动登录*/
+#login .txt .chose{
+  font-size:14px;
+  margin-bottom:10px;
+  color:#fff;
+}
+#login .txt .chose .checkbox{
+  position:relative;
+  top:2px;
+}
+/*自动登录 忘记密码*/
+#login .txt .chose span{
+  float:right;
+}
+/*登录按钮*/
+#login .button_login input{
+  width:270px;
+  height:35px;
+  color:#fff;
+  background-color:#d21412;
+  border-radius:3px;
+  text-align:center;
+  line-height:35px;
+  font-weight:bold;
+  font-size:18px;
+  margin:0 auto;
+}
+/*错误提示*/
+#showErrUname,#showErrUpwd{
+  color:#ff0000;
+  font-size:14px;
+  font-weight:bold;
+  width:260px;
+  height:30px;
+  line-height:30px;
+  padding-left:10px;
+  display:none;
+}
+#showErrUname{  
+  position:absolute;
+  top:370px;
+  right:185px;
+}
+#showErrUpwd{  
+  position:absolute;
+  top:440px;
+  right:185px;
+}
+#showErrUname span,#showErrUpwd span{
+  vertical-align:middle;
+  color:#ff0000;
+  font-size:20px;
+  font-weight:bold;
+  padding-right:5px;
+}
+
+
+
+
+
+
+
+
+
+
+

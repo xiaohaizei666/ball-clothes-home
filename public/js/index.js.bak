@@ -1,0 +1,28 @@
+var wrap=document.querySelector(".wrap");
+var next=document.querySelector(".slide_rt");
+var prev=document.querySelector(".slide_lf");
+next.onclick=function(){
+	nextImg();
+}
+prev.onclick=function(){
+	prevImg();
+}
+function prevImg(){
+	var newLeft=parseInt(wrap.style.left)+1190;
+	alert(newLeft);
+	wrap.style.left=newLeft+"px";	
+}
+function nextImg(){
+	var newLeft=parseInt(wrap.style.left)-1190;
+	wrap.style.left=newLeft+"px";
+}
+
+
+
+
+
+
+
+
+
+

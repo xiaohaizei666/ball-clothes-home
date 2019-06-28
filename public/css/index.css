@@ -1,0 +1,332 @@
+/*清除样式*/
+body,h1,h2,h3,h4,h5,h6,ul,li,span,p,input,button,div{
+  padding:0;
+  margin:0;
+  border:0;
+	outline:none;
+  list-style:none;
+}
+a,a:visited{
+  text-decoration:none;
+}
+/*头部上部样式*/
+#header_top{
+  margin:20px 20px 10px 20px;
+  height:100px;
+}
+/*logo图片*/
+/*左浮动*/
+.lf{
+  float:left;
+}
+/*右浮动*/
+.rt{
+  float:right;
+}
+/*搜索框样式*/
+#search{
+  text-align:center;
+  margin:25px 0 0 200px;
+}
+#search input{
+  width:400px;
+  height:40px;
+  font-size:20px;
+  color:#ff0036;
+  border:1px solid #ff0036;
+}
+/*搜索按钮*/
+#search button{
+  width:80px;
+  height:42px;
+  color:#fff;
+  text-align:center;
+  font-size:18px;
+  letter-spacing:5px;
+  border:1px solid #ff0036;
+  background-color:#ff0036;
+  position:relative;
+  top:1px;
+  right:5px;
+}
+/*登录 注册 购物车样式*/
+#header_top .rt ul{
+  margin:10px;
+}
+#header_top .rt ul li{
+  float:left;
+  padding:2px 15px;
+  line-height:30px;
+}
+#header_top .rt ul li a{
+  color:#bbb;
+  font-size:16px;
+}
+#header_top .rt ul li a:hover{
+  color:#f00;
+}
+#header_top .rt ul li img{
+	vertical-align:middle;
+}
+
+/*导航菜单栏样式*/
+nav{
+	background:#f00;
+}
+#nav{
+	width:1190px;
+	margin:0 auto;
+	background:#f00;
+}
+#nav{
+	height:50px;
+}
+/*设置ul和li的样式*/
+#nav li{
+	float:left;
+}
+/*设置二级菜单绝对定位,并隐藏*/
+#nav>ul>li>ul{
+	position:absolute;	/*使二级菜单ul脱离文档流,不占页面空间*/
+	z-index:2;
+	display:none;
+}
+/*设置二级菜单的li样式*/
+#nav>ul>li>ul>li{
+	float:none;
+}
+/*鼠标放在一级菜单上,显示二级菜单*/
+#nav>ul>li:hover ul{
+	display:block;
+}
+/*一级菜单栏*/
+#nav>ul>li>a{
+  width:150px;
+  font-size:18px;
+  font-weight:bold;
+  text-align:center;
+  line-height:50px;
+	color:#fff;
+	display:block;
+}
+/*在一级菜单栏中,鼠标放上去的样式*/
+#nav>ul>li>a:hover{
+  color:#f00;
+  background-color:#fff;
+}
+/*二级菜单*/
+#nav>ul>li>ul>li>a{
+	width:150px;
+	height:40px;
+	color:#fff;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	background:rgba(0,0,0,0.3);
+	line-height:40px;
+	display:block;
+}
+/*在二级菜单中,鼠标放上去的样式*/
+#nav>ul>li>ul>li>a:hover{
+	background:#c40000;
+}
+
+/*banner轮播图*/
+.container{
+  width:1190px;
+  height:480px;
+  margin:0 auto;
+	overflow:hidden;
+  position:relative;
+}
+/*相框*/
+.wrap{
+	width:8330px;
+	height:480px;
+  position:absolute;
+  top:0;
+  left:0;
+	z-index:1;
+}
+.container .wrap img{
+	float:left;
+	width:1190px;
+	height:480px;
+}
+/*小圆点*/
+.container .buttons{
+	width:120px;
+	height:20px;
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	margin-left:-60px;
+	z-index:2;
+}
+.container .buttons span{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background:rgba(0,0,0,0.3);
+	text-align:center;
+	color:#fff;
+}
+.container .buttons span.on{
+	background:#f00;
+}
+/*上一张 下一张样式设置*/
+.container .slide{
+  width:35px;
+  height:70px;
+  color:#fff;
+  font-size:18px;
+  text-align:center;
+  line-height:70px;
+  border-radius:3px;
+  background-color:rgba(0,0,0,0.5);
+  position:absolute;
+  top:50%;
+  margin-top:-35px;
+	z-index:2;
+	display:none;
+	cursor:pointer;
+}
+/*上一张*/
+.container .slide_lf{
+  left:5px;
+}
+/*下一张*/
+.container .slide_rt{
+  right:5px;
+}
+.container:hover .slide{
+	display:block;
+}
+.container .slide:hover{
+	background-color:rgba(0,100,100,0.2);
+}
+
+/*icon图标列表*/
+#icon{
+	width:1190px;
+	height:80px;
+	background:#fff;
+	margin:0 auto;
+}
+#icon ul{
+  text-align:center;
+  line-height:80px;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-around;
+}
+#icon ul li img{
+  vertical-align:middle;
+  padding-right:15px;
+}
+
+/*商品列表样式*/
+/*商品列表使用弹性布局*/
+#section{																												
+	width:1190px;
+	margin:0 auto;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+}
+/*单个商品样式*/
+.product{
+	width:390px;
+	height:570px;	
+	border:1px solid #cecece;
+	margin:10px 0;
+}
+.product img{
+	width:390px;
+	height:390px;
+}
+.product .price{
+	color:#d80005;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+}
+.product .price span{
+	font-size:36px;
+	padding-left:5px;
+}
+.product h4{
+	font-size:30px;
+	text-align:center;
+}
+.product .detial{
+	font-size:18px;
+	padding:10px;
+	text-align:center;
+}
+/*底部样式*/
+/*底部上部分样式*/
+#footer_top {
+  height:100px;
+  background-color:#414141;
+  color:#ffffff;
+  font-size:20px;
+  box-sizing:border-box;
+}
+#footer_top ul{
+  text-align:center;
+  line-height:100px;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+}
+#footer_top ul li img{
+  vertical-align:middle;
+  padding-right:15px;
+}
+
+/*底部中间背景样式*/
+#footer_middle{
+  background-color:#ebebeb;
+  height:200px;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+}
+/*底部中间5个列表样式*/
+#footer_middle ul{
+  display:inline-block;
+  text-align:center;
+  color:#a4a4a4;
+  width:20%;
+  padding-top:30px;
+}
+/*列表头样式*/
+#footer_middle span{
+  font-size:20px;
+  color:#757575;
+}
+/*列表项设置*/
+#footer_middle ul li{
+  vertical-align:center;
+  padding:5px;
+  font-size:12px;
+}
+/*底部版权样式*/
+#footer_bottom{
+	height:50px;
+}
+#footer_bottom p{
+  text-align:center;
+  font-size:10px;
+  color:#b5b5b5;
+}
+
+
+
+
+
+
+
+

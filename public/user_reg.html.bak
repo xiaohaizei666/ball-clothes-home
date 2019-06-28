@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+	<!-- 页面头部	-->
+	<header>
+	<!-- logo	 -->
+				<div id="header_top">
+			<!-- logo图片 -->
+			<div id="logo" class="lf">
+				<img src="img/logo.png" alt="logo">
+			</div>
+			<span>欢迎注册</span>
+		</div>
+	</header>
+
+	<!-- 页面主体注册部分	-->
+	<!-- 注册页面背景图片	-->
+	<div class="container">
+		<!-- 注册框样式 -->
+		<div class="register rt">
+			<!-- 注册框内容样式 -->
+			<div id="reg">
+				<p>新用户注册
+					<span><a href="user_login.html">直接登录</a></span>
+				</p>
+				<div class="inputbox">
+					<label for="uname">用户名:</label>
+					<input id="uname" type="text" placeholder="请输入用户名">
+					<span id="show-err-uname">用户名不能为空</span>
+				</div>
+				<div class="inputbox">	
+					<label for="upwd">登录密码:</label>
+					<input id="upwd" type="text" placeholder="请输入密码">
+					<span id="show-err-upwd">用户密码不能为空</span>
+				</div>
+				<div class="inputbox">
+					<label for="upwd_confirm">确认密码:</label>
+					<input id="upwd_confirm" type="text" placeholder="请确认密码">
+					<span id="show-err-upwd_confirm">确认密码不能为空</span>
+				</div>
+				<div class="inputbox">	
+					<label for="email">邮箱:</label>
+					<input id="email" type="text" placeholder="邮箱">
+					<span id="show-err-email">邮箱不能为空</span>
+				</div>
+				<div class="inputbox">
+					<label for="phone">手机号:</label>
+					<input id="phone" type="text" placeholder="手机">
+					<span id="show-err-phone">手机号不能为空</span>
+				</div>
+				<div class="inputbox">
+					<label></label>
+					<input type="submit" value="注册" onclick="reg()">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 页面底部 -->
+	<footer>
+		<!-- 底部上部分 -->
+		<div id="footer_top">
+			<ul>
+				<li><img src="img/footer1.png" alt="">100%正品保证</li>
+				<li><img src="img/footer2.png" alt="">7天无忧退货</li>
+				<li><img src="img/footer3.png" alt="">六年专注,品质保证</li>
+			</ul>
+		</div>
+		<!-- 底部中间部分 -->
+		<div id="footer_middle">
+			<ul>
+				<li><span>购物帮助</span></li>
+				<li>常见问题</li>
+				<li>团队购买</li>
+				<li>尺码信息</li>
+				<li>印字印号服务</li>
+			</ul>
+			<ul>
+				<li><span>支付与配送</span></li>
+				<li>如何付款</li>
+				<li>退款政策</li>
+				<li>物流配送</li>
+				<li>在线支付</li>
+			</ul>
+			<ul>
+				<li><span>关于网站</span></li>
+				<li>了解球衣之家</li>
+				<li>快讯信息</li>
+				<li>联系方式</li>
+			</ul>
+			<ul>
+				<li><span>合作品牌</span></li>
+				<li>耐克</li>
+				<li>李宁</li>
+				<li>安踏</li>
+			</ul>
+			<ul>
+				<li><span>联系方式</span></li>
+				<li>TEL:176-2081-5658</li>
+			</ul>
+		</div>
+		<!-- 底部下部分 -->
+		<div id="footer_bottom">		
+			<p>Copyright ©2019   广州球球贸易有限公司 版权所有 粤ICP备17023482号</p>
+		</div>
+	</footer>
+</body>
+</html>
