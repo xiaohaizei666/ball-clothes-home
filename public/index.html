@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" href="css/normalize_zh.css">
+		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/footer.css">
 	</head>
 	<body>
 		<!-- 	首页头部	 -->
@@ -16,26 +19,25 @@
 				</div>
 				<!-- 搜索框 -->
 				<div id="search" class="lf">
-						<input class="input" type="text" placeholder="请输入关键词搜索">
-						<button type="submit">搜索</button>
+						<input class="input" type="text" placeholder="请输入关键词搜索"><button type="submit">搜索</button>
 				</div>
 				<!-- 登录 注册 购物车 -->
 				<div class="rt">
 					<ul>
-						<li><a href="#"><img src="img/gwc.png" alt="">购物车</a></li>
-						<li><a href="user_login.html">登录</a></li>
-						<li><a href="user_reg.html">免费注册</a></li>
+						<li><a class="item" href="#"><img src="img/gwc.png" alt="">购物车</a></li>
+						<li><a class="item" href="user_login.html">登录</a></li>
+						<li><a class="item" href="user_reg.html">免费注册</a></li>
 					</ul>
 				</div>
 			</div>
 		</header>
-
+	
 		<!-- 导航菜单栏 -->
 		<nav>
 			<!-- 一级菜单栏 -->
 			<div id="nav">
 				<ul>
-					<li><a href="index.html">首页</a></li>
+					<li><a class="active" href="index.html">首页</a></li>
 					<li>
 						<a href="#">足球运动</a>
 						<!-- 二级菜单栏 -->
@@ -86,30 +88,30 @@
 		</nav>
 
 		<!-- banner轮播图 -->
-		<div class="container">
+		<div id="banner">
 			<!-- 相框 -->
-			<div class="wrap" style="left:-1190px">
-					<a href=""><img src="img/banner5.jpg" alt="b5"></a>
-					<a href=""><img src="img/banner1.jpg" alt="b1"></a>
-					<a href=""><img src="img/banner2.jpg" alt="b2"></a>
-					<a href=""><img src="img/banner3.jpg" alt="b3"></a>
-					<a href=""><img src="img/banner4.jpg" alt="b4"></a>
-					<a href=""><img src="img/banner5.jpg" alt="b5"></a>
-					<a href=""><img src="img/banner1.jpg" alt="b1"></a>
-			</div>
+			<ul id="ul-imgs" style="width:7140px;margin-left:0px;">
+				<li><a href="javascript:;"><img src="img/banner1.jpg" alt="b1"></a></li>
+				<li><a href="javascript:;"><img src="img/banner2.jpg" alt="b2"></a></li>
+				<li><a href="javascript:;"><img src="img/banner3.jpg" alt="b3"></a></li>
+				<li><a href="javascript:;"><img src="img/banner4.jpg" alt="b4"></a></li>
+				<li><a href="javascript:;"><img src="img/banner5.jpg" alt="b5"></a></li>
+				<li><a href="javascript:;"><img src="img/banner1.jpg" alt="b1"></a></li>
+			</ul>			
 			<!-- 小圆点 -->
-			<div class="buttons">
-				<span>1</span>
-				<span>2</span>
-				<span>3</span>
-				<span>4</span>
-				<span>5</span>
-			</div>
-			<span class="slide slide_lf" >&lt;</span>
-			<span href="" class="slide slide_rt" >&gt;</span>
+			<ul id="ul-idxs">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<!-- 左右按钮 -->
+			<div id="btn-left">&lt;</div>
+			<div id="btn-right">&gt;</div>
 		</div>
 
-		<!-- icon图标列表 -->
+		<!-- icon图标列表1 -->
 		<div id="icon">
 			<ul>
 				<li><img src="img/icon1.png" alt="">真实好评</li>
@@ -124,56 +126,59 @@
 		<section>
 			<div id="section">
 				<div class="product">	
-					<img src="img/product1.jpg" alt="">
+					<div class="imgL"><img src="img/product1.jpg" alt=""></div>
 					<p class="price">¥<span>99</span></p>
 					<h4>干爽 透气</h4>
 					<p class="detial">2019新款锐克足球服 UCAN锐克短袖足球服套装男成人组队球衣</p>
 				</div>
 				<div class="product">	
-					<img src="img/product2.jpg" alt="">
+					<div class="imgL"><img src="img/product2.jpg" alt=""></div>
 					<p class="price">¥<span>168</span></p>
 					<h4>温暖 舒适</h4>
 					<p class="detial">卡尔美训练夹克 KELME卡尔美秋冬立领针织训练夹克外套</p>
 				</div>
 				<div class="product">	
-					<img src="img/product3.jpg" alt="">
+					<div class="imgL"><img src="img/product3.jpg" alt=""></div>
 					<p class="price">¥<span>88</span></p>
 					<h4>因球而生</h4>
 					<p class="detial">篮球比赛服 专业比赛撞色V领篮球服套装</p>
 				</div>
 				<div class="product">	
-					<img src="img/product4.jpg" alt="">
+					<div class="imgL"><img src="img/product4.jpg" alt=""></div>
 					<p class="price">¥<span>208</span></p>
 					<h4>为运动而生</h4>
 					<p class="detial">2019新款彪马足球服 Puma彪马足球服组队训练服光板球衣</p>
 				</div>
 				<div class="product">	
-					<img src="img/product5.jpg" alt="">
+					<div class="imgL"><img src="img/product5.jpg" alt=""></div>
 					<p class="price">¥<span>168</span></p>
 					<h4>舒适 透气</h4>
 					<p class="detial">2019新款锐克高领运动卫衣 UCAN锐克男春秋长袖针织训练上衣高领卫衣套头衫</p>
 				</div>
 				<div class="product">	
-					<img src="img/product6.jpg" alt="">
+					<div class="imgL"><img src="img/product6.jpg" alt=""></div>
 					<p class="price">¥<span>108</span></p>
 					<h4>弹性 舒适</h4>
 					<p class="detial">2019新款锐克运动打底衣 UCAN锐克男紧身衣长袖速干透气pro打底健身衣</p>
 				</div>
 			</div>
 		</section>
-
-		<!-- 	首页底部	 -->
+		<!-- icon图标列表2 -->
+		<ul class="icon2">
+			<li><img src="img/icon6.png" alt="">100%正品保证</li>
+			<li><img src="img/icon7.png" alt="">7天无忧退货</li>
+			<li><img src="img/icon8.png" alt="">六年专注,品质保证</li>
+		</ul>
+		<!-- 回到首页 -->
+		<div id="go-top">
+			<a href="#">
+				<span class="go-top-icon"></span>TOP
+			</a>
+		</div>
+		<!-- 首页底部	-->
 		<footer>
 			<!-- 底部上部分 -->
 			<div id="footer_top">
-				<ul>
-					<li><img src="img/footer1.png" alt="">100%正品保证</li>
-					<li><img src="img/footer2.png" alt="">7天无忧退货</li>
-					<li><img src="img/footer3.png" alt="">六年专注,品质保证</li>
-				</ul>
-			</div>
-			<!-- 底部中间部分 -->
-			<div id="footer_middle">
 				<ul>
 					<li><span>购物帮助</span></li>
 					<li>常见问题</li>
@@ -196,13 +201,15 @@
 				</ul>
 				<ul>
 					<li><span>合作品牌</span></li>
-					<li>耐克</li>
-					<li>李宁</li>
-					<li>安踏</li>
+					<li>卡尔美/KELME</li>
+					<li>瑞克/UCAN</li>
+					<li>李宁/LILING</li>
+					<li>安踏/ANTA</li>
 				</ul>
 				<ul>
 					<li><span>联系方式</span></li>
 					<li>TEL:176-2081-5658</li>
+					<li><img src="img/ewm.jpg" alt=""></li>
 				</ul>
 			</div>
 			<!-- 底部下部分 -->

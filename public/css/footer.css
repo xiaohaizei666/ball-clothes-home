@@ -1,0 +1,39 @@
+
+ul{
+    list-style-type: none;
+}
+footer{
+    width:1190px;
+    margin:0 auto;
+}
+#footer_top{
+    background-color:#ebebeb;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+}
+#footer_top ul{
+    display:inline-block;
+    text-align:center;
+    color:#a4a4a4;
+}
+#footer_top ul li{
+    vertical-align:center;
+    padding:5px 0;
+    font-size:12px;
+}
+#footer_top ul li span{
+    font-size:20px;
+    color:#757575;
+}
+#footer_top ul li img{
+    width:80px;
+}
+#footer_bottom{
+    height:50px;
+}
+#footer_bottom p{
+    text-align:center;
+    font-size:10px;
+    color:#b5b5b5;
+}
