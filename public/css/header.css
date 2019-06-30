@@ -39,9 +39,10 @@ a,a:visited{
 }
 #search button{
     width:80px;
-    height:42px;
+    height:45px;
     color:#fff;
-    font-size:14px;
+    font-size:18px;
+    font-weight: bold;
     text-align:center;
     background-color: #ff0036;
     letter-spacing:5px;
